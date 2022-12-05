@@ -10,7 +10,7 @@ public class News implements INews {
     public ArrayList<Integer> rateList = new ArrayList<Integer>();
     private float averageRate;
 
-    public void caculate(ArrayList<Integer> rateList){
+    public void caculate(){
         float sum = 0;
         for(int i = 0; i< rateList.size(); i++)
             sum = sum + rateList.get(i);

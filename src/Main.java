@@ -44,7 +44,7 @@ public class Main {
                         }
                         list.add(news);
                     }
-                    checkExist();
+                    checkExit();
                     if (scanner.nextInt() == 0) {
                         createMenu();
                         break;
@@ -58,7 +58,7 @@ public class Main {
                         System.out.println("content:" + list.get(i).getContent());
                         System.out.println("----------");
                     }
-                    checkExist();
+                    checkExit();
                     if (scanner.nextInt() == 0) {
                         createMenu();
                         break;
@@ -66,11 +66,11 @@ public class Main {
                     break;
                 case 3:
                     for (int i = 0; i < list.size(); i++) {
-                        list.get(i).caculate(list.get(i).rateList);
+                        list.get(i).caculate();
                         list.get(i).display();
                         System.out.println("----------");
                     }
-                    checkExist();
+                    checkExit();
                     if (scanner.nextInt() == 0) {
                         createMenu();
                         break;
@@ -93,7 +93,7 @@ public class Main {
         System.out.println("4.Exit");
         System.out.println("-----------------------------");
     }
-    public static void checkExist(){
+    public static void checkExit(){
         System.out.println("-----------------------------");
         System.out.println("Press 0 to exist");
     }
